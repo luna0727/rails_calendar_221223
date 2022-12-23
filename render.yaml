@@ -10,9 +10,9 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: DATABASE_URL
+      - key: postgres://hararuna:iaSV00UIb8S3e3JRk8A8pm64JCw2QRLW@dpg-cei8t4pa6gdi7rts5q60-a/cal_11
         fromDatabase:
-          name: 221223_rails _calendar_luna
+          name: dpg-cei8t4pa6gdi7rts5q60-a
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
