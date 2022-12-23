@@ -1,0 +1,25 @@
+<%= link_to '予定追加', new_blog_path %>
+
+<%= month_calendar events: @blogs do |date, blogs| %>
+  <%= date.day %>
+
+  <% blogs.each do |blog| %>
+    <div>
+      <%= link_to blog.title, blog %>
+    </div>
+  <% end %>
+<% end %>
+
+<table>
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= blog.title %></td>
+        <td><%= blog.start_time.strftime("%Y-%m-%d %H:%M") %></td>
+        <td><%= link_to '閲覧', blog %></td>
+        <td><%= link_to '編集', edit_blog_path(blog.id) %></td>
+        <td><%= link_to '削除',blog_path(blog.id), method: :delete%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

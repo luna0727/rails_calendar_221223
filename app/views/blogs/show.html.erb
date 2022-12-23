@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>タイトル</strong>
+  <%= @Blog.title %>
+</p>
+
+<p>
+  <strong>時間</strong>
+  <%= @Blog.start_time.strftime("%Y-%m-%d %H:%M") %>
+</p>
+
+<p>
+  <strong>内容</strong>
+  <%= @Blog.content %>
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@Blog) %> |
+<%= link_to 'Back', blogs_path %>
