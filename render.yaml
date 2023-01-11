@@ -1,5 +1,5 @@
 databases:
-  - name: soturon_cal_11
+  - name: cal_11
     databaseName: cal_11
     user: hararuna
     plan: free
@@ -18,7 +18,7 @@ services:
     envVars:
       - key: postgres://hararuna:iaSV00UIb8S3e3JRk8A8pm64JCw2QRLW@dpg-cei8t4pa6gdi7rts5q60-a.singapore-postgres.render.com/cal_11
         fromDatabase:
-          name: soturon_cal_11
+          name: cal_11
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
