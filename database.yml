@@ -22,15 +22,14 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: hararuna
   passward: iaSV00UIb8S3e3JRk8A8pm64JCw2QRLW
+  host: localhost
+  timeout: 5000
 
 
 development:
   <<: *default
   database: cal_11_development
-  username: hararuna
-  passward: iaSV00UIb8S3e3JRk8A8pm64JCw2QRLW
-  host: dpg-cei8t4pa6gdi7rts5q60-a
-
+  
 
 
 
