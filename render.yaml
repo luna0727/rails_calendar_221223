@@ -1,7 +1,7 @@
-databases:
-  - name: soturon_cal_11
-    databaseName: cal_11
-    user: hararuna
+#databases:
+ # - name: soturon_cal_11
+  #  databaseName: cal_11
+   # user: hararuna
 
 services:
   - type: web
