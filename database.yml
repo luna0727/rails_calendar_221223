@@ -20,11 +20,18 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: hararuna
+  passward: iaSV00UIb8S3e3JRk8A8pm64JCw2QRLW
 
 
 development:
   <<: *default
   database: cal_11_development
+  username: hararuna
+  passward: iaSV00UIb8S3e3JRk8A8pm64JCw2QRLW
+  host: dpg-cei8t4pa6gdi7rts5q60-a
+
+
 
 
   # The specified database role being used to connect to postgres.
