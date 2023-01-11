@@ -1,8 +1,8 @@
 databases:
-  - name: dpg-cei8t4pa6gdi7rts5q60-a
+  - name: soturon_cal_11
     databaseName: cal_11
     user: hararuna
-    
+
 services:
   - type: web
     name: 221223_rails _calendar_luna
