@@ -1,17 +1,22 @@
-#databases:
- # - name: soturon_cal_11
-  #  databaseName: cal_11
-   # user: hararuna
+databases:
+  - name: soturon_cal_11
+    databaseName: cal_11
+    user: hararuna
+    plan: free
+    region: singapore
+    postgresMajorVersion: 14
+
 
 services:
   - type: web
     name: 221223_rails _calendar_luna
     env: ruby
+    plan: free
+    region: singapore
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: postgres://hararuna:iaSV00UIb8S3e3JRk8A8pm64JCw2QRLW@dpg-cei8t4pa6gdi7rts5q60-a.singapore-postgres.render.com/cal_11
-
         fromDatabase:
           name: soturon_cal_11
           property: connectionString
